@@ -1,0 +1,62 @@
+// Buttons
+// --------------------------------------------------
+
+.btn {
+	background-color: @fohc-blue;
+	color: #fff;
+	padding: 10px;
+	display: inline-block;
+  	*display: inline;
+  	*zoom: 1;
+	margin-right: 5px;
+	text-decoration: none;
+	margin-bottom: 10px;
+	border: none;
+	&:hover {
+		background-color: darken(@fohc-blue, 10%);
+		color: #fff;
+	}
+	&.btn-green {
+		background-color: @fohc-green;
+		&:hover {
+			background-color: darken(@fohc-green, 10%);
+		}
+	}
+
+	&.btn-primary {
+    	background-color: @button-primary-hover;
+    	&:hover {
+			background-color: darken(@button-primary-hover, 10%);
+		}
+	}
+	&.btn-info    {
+		background-color: @button-info-hover;
+    	&:hover {
+			background-color: darken(@button-info-hover, 10%);
+		}
+	}
+	&.btn-danger  {
+		background-color: @button-danger-hover;
+    	&:hover {
+			background-color: darken(@button-danger-hover, 10%);
+		}
+	}
+	&.btn-success {
+		background-color: @button-success-hover;
+    	&:hover {
+			background-color: darken(@button-success-hover, 10%);
+		}
+	}
+	&.btn-warning {
+		background-color: @button-warning-hover;
+    	&:hover {
+			background-color: darken(@button-warning-hover, 10%);
+		}
+	}
+	&.btn-inverse {
+		background-color: @button-inverse-hover;
+    	&:hover {
+			background-color: darken(@button-inverse-hover, 10%);
+		}
+	}
+}

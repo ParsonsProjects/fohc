@@ -1,0 +1,37 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Login Stylesheet
+
+This stylesheet is loaded (if admin.php is setup in your 
+functions file) on the login page. This way you can style 
+the login page. It won't affect any other page, admin or front-end.
+
+For more info, check out the codex:
+http://codex.wordpress.org/Creating_Admin_Themes
+
+******************************************************************/
+/* the form box */
+/*
+This is the Wordpress logo in the admin area.
+You'll have to load your own images and mess
+with the width and height.
+*/
+
+body { background: #173178 !important; }
+#login { z-index:9999; position:relative; }
+.login form { box-shadow: 0px 0px 0px 0px !important; }
+.login h1 a { background:url(../images/logo.png) no-repeat center top !important; height:90px !important; }
+input.button-primary, button.button-primary, a.button-primary { border-radius: 3px !important; border:none !important; font-weight:normal !important; text-shadow:none !important; }
+.button:active, .submit input:active, .button-secondary:active { background:#fff !important; text-shadow: none !important; }
+.login #nav a, .login #backtoblog a { color:#fff !important; text-shadow: none !important; }
+.login #nav a:hover, .login #backtoblog a:hover { color:#fff !important; text-shadow: none !important; }
+.login #nav, .login #backtoblog { text-shadow: none !important; }
+.login #nav { float:right; }
+
+/*
+You'll have to override some of the default styles
+but since we're referencing the id, it should be easy.
+*/
+/* login button*/

@@ -1,0 +1,44 @@
+// Grid Responsive
+// --------------------------------------------------
+
+@media (min-width: @screen-large) {
+
+	.container {
+	    width: @screen-width-large;
+	}
+	
+	#grid > .core ( @screen-width-large, @gutter );
+
+}
+
+@media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
+
+	.container {
+	    width: 768px;
+	}
+	
+	#grid > .core ( @screen-width-small, @gutter );
+
+}
+
+@media (max-width: @screen-tablet) {
+	
+	.container {
+	    width: auto;
+	    padding: 0 20px;
+	}
+
+	.row {
+	    width: auto;
+	    margin: 0;
+	}
+	
+	.column {
+		float: none;
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+
+}
+

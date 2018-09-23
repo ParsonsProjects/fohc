@@ -1,0 +1,229 @@
+//
+// Variables
+// --------------------------------------------------
+
+//
+// Global values
+// --------------------------------------------------
+@screen-width-large: 1170px;
+@screen-width-desktop: 940px;
+@screen-width-small: 768px;
+@columns: 12;
+@gutter: 20px;
+
+
+// Media queries breakpoints
+// --------------------------------------------------
+
+// Extra small screen / phone
+@screen-xsmall:              480px;
+@screen-phone:               @screen-xsmall;
+
+// Small screen / tablet
+@screen-small:               768px;
+@screen-tablet:              @screen-small;
+
+// Medium screen / desktop
+@screen-medium:              992px;
+@screen-desktop:             @screen-medium;
+
+// Large screen / wide desktop
+@screen-large:               1200px;
+@screen-large-desktop:       @screen-large;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-small-max:           (@screen-medium - 1);
+@screen-tablet-max:          (@screen-desktop - 1);
+@screen-desktop-max:         (@screen-large-desktop - 1);
+
+
+//
+// Color Swatches
+// --------------------------------------------------
+@fohc-blue: 	#205cac;
+@fohc-green:    #5c9623;
+@fohc-dark-gray:#333333;
+@fohc-sky-blue: #359bed;
+
+@turquoise:     #1abc9c;
+@green-sea:     #16a085;
+
+@emerald:       #2ecc71;
+@nephritis:     #27ae60;
+
+@peter-river:   #3498db;
+@belize-hole:   #2980b9;
+
+@amethyst:      #9b59b6;
+@wisteria:      #8e44ad;
+
+@wet-asphalt:   #34495e;
+@midnight-blue: #2c3e50;
+
+@sun-flower:    #f1c40f;
+@orange:        #f39c12;
+
+@carrot:        #e67e22;
+@pumpkin:       #d35400;
+
+@alizarin:      #e74c3c;
+@pomegranate:   #c0392b;
+
+@clouds:        #ecf0f1;
+@silver:        #bdc3c7;
+
+@concrete:      #95a5a6;
+@asbestos:      #7f8c8d;
+
+@blue:                  #049cdb;
+@blueDark:              #0064cd;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+
+// Main Colors
+// -------------------------
+@base:             @fohc-dark-gray;
+@firm:             @turquoise;
+
+@gray:             @concrete;
+@lightgray:        @silver;
+@inverse:          white;
+
+@success:          @green;
+@danger:           @red;
+@warning:          @orange;
+@info:             @blue;
+
+@link-color:       @fohc-blue;
+@link-hover-color: darken(@fohc-blue, 30%);
+
+
+// Typography
+// -------------------------
+@base-font-family: "Lato", sans-serif;
+@base-font-size: 14px;
+@base-line-height: 1.231;
+
+@h1: @base-font-size * 4.429; /* 62px */
+@h2: @base-font-size * 3.714; /* 52px */
+@h3: @base-font-size * 2.857; /* 40px */
+@h4: @base-font-size * 2.071; /* 29px */
+@h5: @base-font-size * 2;     /* 28px */
+@h6: @base-font-size * 1.714; /* 24px */
+
+// Icons
+@icon-normal: 16px;
+@icon-medium: 18px;
+@icon-large:  32px;
+
+// Inputs
+// -------------------------
+@input-border-radius: 6px;
+
+// Pagination
+// -------------------------
+@pagination-color: mix(@base, white, 20%);
+
+// Pager
+// -------------------------
+@pager-padding: 9px 15px 10px;
+
+// Buttons
+@button-text:           @inverse;
+@button-hover:          mix(@lightgray, white, 80%);
+@button-active:         mix(@lightgray, black, 85%);
+@button-primary-hover:  mix(@firm, white, 80%);
+@button-primary-active: mix(@firm, black, 85%);
+@button-info-hover:     mix(@info, white, 80%);
+@button-info-active:    mix(@info, black, 85%);
+@button-success-hover:  mix(@success, white, 80%);
+@button-success-active: mix(@success, black, 85%);
+@button-danger-hover:   mix(@danger, white, 80%);
+@button-danger-active:  mix(@danger, black, 85%);
+@button-warning-hover:  overlay(@warning, darken(white, 37.5%));
+@button-warning-active: mix(@warning, black, 85%);
+@button-inverse-hover:  overlay(@base, darken(white, 37.5%));
+@button-inverse-active: mix(@base, black, 85%);
+
+// Navbar
+// -------------------------
+@navbar-link-space:    20px;
+@navbar-sublink-space: 9px;
+
+// Dropdown Menu
+// -------------------------
+@dropdown-background: mix(@inverse, @base, 94%);
+
+// Progress/slider
+// -------------------------
+@progress-height: 12px;
+
+// Switch
+// -------------------------
+@switch-border-radius: 30px;
+@switch-width: 80px;
+
+// Form states and alerts
+// -------------------------
+
+@state-warning-text:             darken(@warning, 10%);
+@state-warning-bg:               lighten(@warning, 35%);
+@state-warning-border:           darken(spin(@state-warning-bg, -10), 3%);
+
+@state-danger-text:              darken(@danger, 10%);
+@state-danger-bg:                lighten(@danger, 35%);
+@state-danger-border:            darken(spin(@state-danger-bg, -10), 3%);
+
+@state-success-text:             darken(@success, 10%);
+@state-success-bg:               lighten(@success, 35%);
+@state-success-border:           darken(spin(@state-success-bg, -10), 10%);
+
+@state-info-text:                darken(@info, 10%);
+@state-info-bg:                  lighten(@info, 35%);
+@state-info-border:              darken(spin(@state-info-bg, -10), 15%);
+
+// Alerts
+// -------------------------
+@alert-padding:               15px;
+@alert-link-font-weight:      bold;
+
+@alert-success-bg:            @state-success-bg;
+@alert-success-text:          @state-success-text;
+@alert-success-border:        @state-success-border;
+
+@alert-info-bg:               @state-info-bg;
+@alert-info-text:             @state-info-text;
+@alert-info-border:           @state-info-border;
+
+@alert-warning-bg:            @state-warning-bg;
+@alert-warning-text:          @state-warning-text;
+@alert-warning-border:        @state-warning-border;
+
+@alert-danger-bg:             @state-danger-bg;
+@alert-danger-text:           @state-danger-text;
+@alert-danger-border:         @state-danger-border;
+
+// Inputs
+// -------------------------
+@input-border-radius: 6px;
+@input-border: #c0c0c0;
+@input-background: #fff;
+@input-height: 38px;
+
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+@zindex-ticky:            900;
+@zindex-dropdown:         1000;
+@zindex-popover:          1010;
+@zindex-tooltip:          1030;
+@zindex-fixedNavbar:      1030;
+@zindex-modal-backdrop:   1045;
+@zindex-modal:            1055;

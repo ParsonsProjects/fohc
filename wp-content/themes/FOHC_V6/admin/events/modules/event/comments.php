@@ -1,0 +1,1 @@
+<div id="comments-wrapper"><?php comments_template(); ?></div>

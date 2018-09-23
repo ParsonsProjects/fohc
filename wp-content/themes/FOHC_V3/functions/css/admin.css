@@ -1,0 +1,30 @@
+.qpanel { width:590px; height:100%; }
+.panelbg h2 { text-align:center; color:#ffffff; }
+.panelbgright { padding:10px 0; }
+.accordion { }
+.accordion h3 { background: #6f6f6f url(../img/add.png) no-repeat 10px center; padding: 15px 50px; margin: 10px 0 0px 0; font:bold 18px Arial, Helvetica, sans-serif; border:1px solid #ccc; color:#fff; cursor: pointer; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; text-shadow:1px 1px 0 #333; }
+.accordion h3:hover { background-color: #555555; }
+.accordion h3.active { background:#555555 url(../img/stop.png) no-repeat 10px center; border-bottom:none; -moz-border-radius-topright: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-bottomright: 0px; -moz-border-radius-bottomleft: 0px; -webkit-border-radius: 5px 5px 0px 0px; border-radius: 5px 5px 0px 0px; }
+.accordion div { background: #ffffff; border: 1px solid #ccc; border-bottom:none; margin: 0; padding: 0px 0px; -moz-border-radius-topleft: 0px; -moz-border-radius-topright: 0px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-radius: 0px 0px 5px 5px; border-radius: 0px 0px 5px 5px; }
+.admintable td.ahead { background:#79bfe3; padding:0; }
+table.admintable { border:0px solid #caedff; width:100%; margin:0; padding:0; }
+table.admintable tr td { padding:15px; margin:0; vertical-align:top; border-bottom:1px solid #ccc; }
+.admintable td h2 { text-align:left; font:bold 14px/18px Arial, Sans-serif; }
+.admintable small { color:#7b7b7b; font:normal 10px/14px Verdana, Sans-serif; font-size:11px; margin:5px 0; }
+.admintable td input, .admintable td select, .admintable td textarea { background-color: #f1f1f1; margin-bottom: 10px !important; padding: 6px; border: 1px solid; border-color: #b3b3b3 #e0e0e0 #e0e0e0 #b3b3b3; filter:progid:DXImageTransform.Microsoft.Gradient (GradientType=0, StartColorStr='#ffffffff', EndColorStr='#ffeeddaa');
+}
+.admintable td label { width:100px; }
+.admintable td select.csr { width:120px; }
+.admintable td span.csrbox { border:1px solid #ccc; background:#fff; padding:8px; margin-bottom:5px; display:block; }
+.foot { padding:0; margin:0; overfflow:hidden; height:100%; }
+.submit { text-align:right; padding:0;}
+.submit input { padding:10px; font:bold 16px Arial !important; }
+span.info { background:#fffae8; border:1px solid #e2c388; padding:10px; display:block; font:normal 11px Tahoma, Verdana, Sans-serif; -moz-border-radius:4px; -khtml-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; }
+.topimg { border:1px solid #ccc; background:#fff; padding:2px; }
+#toplevel_page_help div.wp-menu-image { background:transparent url(http://fohcfestival.co.uk/NEW/wp-content/themes/Folkestone%20Optimist%20H.C/functions/img/help.png) no-repeat scroll left -33px; }
+#adminmenu #toplevel_page_help:hover div.wp-menu-image, #adminmenu #toplevel_page_help.wp-has-current-submenu div.wp-menu-image, #adminmenu #toplevel_page_help.current div.wp-menu-image { background:transparent url(http://fohcfestival.co.uk/NEW/wp-content/themes/Folkestone%20Optimist%20H.C/functions/img/help.png) no-repeat scroll left -1px; }
+#toplevel_page_FOHC-Setting div.wp-menu-image { background:transparent url(http://fohcfestival.co.uk/NEW/wp-content/themes/Folkestone%20Optimist%20H.C/functions/img/adminicon.png) no-repeat scroll left -33px; }
+#adminmenu #toplevel_page_FOHC-Setting:hover div.wp-menu-image, #adminmenu #toplevel_page_FOHC-Setting.wp-has-current-submenu div.wp-menu-image, #adminmenu #toplevel_page_FOHC-Setting.current div.wp-menu-image { background:transparent url(http://fohcfestival.co.uk/NEW/wp-content/themes/Folkestone%20Optimist%20H.C/functions/img/adminicon.png) no-repeat scroll left -1px; }
+#footer { position:relative !important; }
+.qpanel .radio input{margin-top:5px;}
+.qpanel .radio {padding-right:10px; display:block;}

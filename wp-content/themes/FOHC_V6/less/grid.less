@@ -1,0 +1,21 @@
+// Grid
+// --------------------------------------------------
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.column {
+    margin-left: @gutter;
+    overflow: hidden;
+    float: left;
+    display: inline;
+}
+
+.row {
+	margin-left: -@gutter;
+    .clearfix();
+}
+
+#grid > .core ( @screen-width-desktop, @gutter );

@@ -1,0 +1,16 @@
+body {
+	background: #fff none !important;
+	color: #000;
+}
+a, a:visited, a:active{
+	color:#000;
+	text-decoration:none;
+}
+#left_side, #right_side, #nav_wrap, #footerLinks, #slider, #head_right, .button, footer {
+	display:none;
+}
+#center {
+	top:0;
+	float:none;
+	width:100%;
+}

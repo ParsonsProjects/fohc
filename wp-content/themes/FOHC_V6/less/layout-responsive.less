@@ -1,0 +1,78 @@
+//
+// Layout Responsive
+// --------------------------------------------------
+
+@media (min-width: @screen-large) {
+
+	.teams {
+		.team {
+			width: 99% / 4;
+			height: 99% / 4;
+		}
+	}
+
+	.days {
+		.day {
+			width: 99% / 4;
+			height: 99% / 4;
+		}
+	}
+
+}
+
+@media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
+	
+	#quick-overview {
+		.tabs-nav li {
+			float: none;
+			margin-bottom: 5px;
+			width: 100%;
+			&.active {
+				.arrow(0, @fohc-sky-blue, bottom, 50%, 0, darken(#08C, 10%));
+			}
+		}
+	}
+
+	.teams {
+		.team {
+			width: 99% / 2;
+			height: 99% / 2;
+		}
+	}
+
+	.days {
+		.day {
+			width: 99% / 2;
+			height: 99% / 2;
+		}
+	}
+
+}
+
+@media (max-width: @screen-tablet) {
+	
+	#header {
+		#logo {
+			float: none;
+		}
+		#search,
+		#social-platforms { 
+			float: none;
+			margin: 0 0 20px;
+			width: 100%;
+		}
+	}
+
+	#secondary-banner {
+		display: none !important;
+	}
+
+	#sponsors {
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	
+}
+
